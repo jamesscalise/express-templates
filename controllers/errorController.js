@@ -12,6 +12,7 @@ exports.respondNoResourceFound = (req, res) => {
     let errorCode = httpStatus.NOT_FOUND;
     res.status(errorCode);
     res.send(`${errorCode} | THe page does not exist!`)
+    let fakeVar = 1;
 };
 
 exports.respondInternalError = (error, req, res, next) => {
